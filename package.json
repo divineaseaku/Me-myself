@@ -1,0 +1,28 @@
+{
+  "name": "me-myself",
+  "version": "1.0.0",
+  "description": "Portfolio site for Divine Aseaku",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass":"node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divineaseaku/Me-myself.git"
+  },
+  "keywords": [
+    "Divine",
+    "Aseaku",
+    "Divine"
+  ],
+  "author": "Divine Aseaku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/divineaseaku/Me-myself/issues"
+  },
+  "homepage": "https://github.com/divineaseaku/Me-myself#readme"
+}
