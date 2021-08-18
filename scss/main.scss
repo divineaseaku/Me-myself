@@ -3,9 +3,11 @@ $secondary-color: #ffff;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 a {
-  text-decoration: none;
   color: $secondary-color;
 }
 .nav-btns {
@@ -15,9 +17,12 @@ a {
 body {
   background: $primary-color;
   color: $secondary-color;
+  nav {
+  }
 }
 
 main {
+  margin-top: 20rem;
   i {
     color: $secondary-color;
   }
