@@ -6,47 +6,74 @@ $secondary-color: #ffff;
   text-decoration: none;
 }
 
-a {
+a,li {
   color: $secondary-color;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2em;
 }
 
-body {
+.container {
+  //background-image: url("../images/IMG-20210515-WA0007_1.jpg");
+   background-size: cover;
+  // background-position: center ;
+  // background-repeat: no-repeat;
+  margin: 0 auto;
+  // overflow: hidden;
+  position: relative;
   background: $primary-color;
   color: $secondary-color;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 95%;
+  //z-index: 2;
 }
 
-.nav-btns {
-  list-style-type: none;
-}
-
+  
 .inner-header {
+  //padding: 0.6em;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  width: auto;
-  background: rgb(61, 56, 55);
-  min-height: 8vh;
+  width: 95% auto ;
+  background: #3d3837;
+  max-height: 120px;
+  border-radius: 5px;
   .nav-logo {
-    //align-content: center;
-    width: fit-content;
-    letter-spacing: 4px;
+    float: left;
+    width: wrap-content;
+    align-content: flex-start;
+    letter-spacing: 2px;
     font-size: 20px;
-    margin-left: 23px;
+    padding: 12px;
   }
-  .nav-btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px;
-    width: 35%;
-    background: coral;
 
+  .nav-btns {
+      padding: 12px;
+      //width: %;
+      color: $secondary-color;
+      background-color: #ac6850;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      
+      
     .nav-btn {
-      margin: 2rem;
-      letter-spacing: 3px;
-      font-size: 18px;
+      display: inline-block;
+      margin: 0.3em;
+      font-size: 20px;
+      padding: 0.5rem;
+      width: wrap-content;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .nav-btn:hover {
+      transition: all 0.5s ease;
+      background-color: #da6e47;
+      color: $secondary-color;
+      border-radius: 50%;
+      
     }
   }
 }
