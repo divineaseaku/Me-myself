@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400&display=swap');
+
+
 $primary-color: #444;
 $secondary-color: #ffff;
-
+$tertiary-color: #ac6850;
 * {
   box-sizing: border-box;
   text-decoration: none;
 }
 
-a,li {
+a,li , i{
   color: $secondary-color;
   text-decoration: none;
   list-style: none;
@@ -19,26 +22,26 @@ a,li {
   // background-position: center ;
   // background-repeat: no-repeat;
   margin: 0 auto;
-  // overflow: hidden;
+  overflow: hidden;
   position: relative;
   background: $primary-color;
   color: $secondary-color;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   width: 95%;
   //z-index: 2;
 }
 
-  
 .inner-header {
   //padding: 0.6em;
-  margin: 0 auto;
+  margin: 2 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   width: 95% auto ;
   background: #3d3837;
-  max-height: 120px;
+  max-height: 110px;
   border-radius: 5px;
   .nav-logo {
     float: left;
@@ -51,12 +54,13 @@ a,li {
 
   .nav-btns {
       padding: 12px;
-      //width: %;
+      width: 520px;
       color: $secondary-color;
-      background-color: #ac6850;
+      background-color:$tertiary-color;
       font-size: 1.2em;
       border: none;
       border-radius: 5px;
+    
       
       
     .nav-btn {
@@ -70,7 +74,7 @@ a,li {
     }
     .nav-btn:hover {
       transition: all 0.5s ease;
-      background-color: #da6e47;
+      background-color:$tertiary-color;
       color: $secondary-color;
       border-radius: 50%;
       
@@ -78,9 +82,60 @@ a,li {
   }
 }
 
-main {
-  margin-top: 20rem;
-  i {
-    color: $secondary-color;
-  }
+.showcase {
+  margin-top: 14rem;
+  width: 100%;
+  text-align: center;
 }
+.showcase img {
+  width: 240px;
+  height: 240px;
+ border-radius: 100px;
+ box-shadow: 0 0 0.5rem 0.4rem $secondary-color;
+}
+.showcase-caption {
+
+  width: 70% auto;
+  display: block;
+p{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $secondary-color;
+}
+h1{
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 3px;
+}
+h3{
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding: 0.5rem;
+  margin: 4px;
+}
+
+}
+.social{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  max-width: 180px;
+  align-items: center;
+  margin: 10px auto;
+  a{
+    font-size: 1.2em;
+    padding: 0.9rem;
+    margin: 0.5rem;
+    i{
+      margin: 0 auto;
+      transition: all 0.5s ease-in;
+      &:hover{
+      color: rgba($tertiary-color, $alpha: 1.0);
+      transform: scale(1.2);
+      }
+    }
+  }
+  
+}
+
