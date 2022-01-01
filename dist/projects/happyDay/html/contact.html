@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav-logo">
+          <a href="index.html"><img src="../imgs/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav-btns">
+          <ul class="nav-list">
+            <li><a class="ul-btn" href="newclient.html">New Client</a></li>
+            <li><a class="ul-btn" href="lookup.html">Client Lookup</a></li>
+            <li><a class="ul-btn" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="profile-btn">
+          <a class="profile" href="login.html">Staff Login</a>
+        </div>
+        <span class="slide-btn">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
+      </header>
+      <div class="side-menu" id="side-menu">
+        <a href="#" class="close-btn" onclick="closeSlideMenu()"> &times;</a>
+        <a href="newclient.html">New Client</a>
+        <a href="lookup.html">Client Lookup</a>
+        <a href="contact.html">Contact Us</a>
+
+        <a class="profile" href="login.html">Staff Login</a>
+      </div>
+
+      <div class="contact-main">
+        <div class="contact-us">
+          <h2>Get in Touch</h2>
+          <p>
+            Contact us through any of the below. We will get back to you as soon
+            as possible.
+          </p>
+          <ul class="contact-cards">
+            <li class="cards">
+              <a href="mailto:happydaycare30@gmail.com" target="_blank">
+                <i class="fa fa-envelope fa-1x email"> </i>
+              </a>
+              <h4>happydaycare30@gmail.com</h4>
+            </li>
+
+            <li class="cards">
+              <i class="fa fa-phone fa-1x"></i>
+              <h4>443-840-9795</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../script/main.js"></script>
+  </body>
+</html>

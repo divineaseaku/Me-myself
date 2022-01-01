@@ -8,6 +8,8 @@ $hover-color: #d69f8b;
 * {
   box-sizing: border-box;
   text-decoration: none;
+  margin: 0;
+  padding: 0;  
 }
 
 @mixin hover($color) {
@@ -28,23 +30,18 @@ a,li , i{
 }
 
 .container {
-  //background-image: url("../images/IMG-20210515-WA0007_1.jpg");
    background-size: cover;
-  // background-position: center ;
-  // background-repeat: no-repeat;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
   background: $primary-color;
   color: $secondary-color;
-  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-family: 'Fira Sans', sans-serif;
   width: 95%;
-  //z-index: 2;
+  overflow-y: scroll;
 }
 
 .inner-header {
-  //padding: 0.6em;
   margin: 8px auto;
   display: flex;
   flex-direction: row;
@@ -218,5 +215,120 @@ font-size: large;
   }
 
   }
+/*projects page*/
+.project-showcase {
+  margin-top: 8rem;
+  width: 100%;
+  text-align: center;
+}
+.projects{
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+height: fit-content;
+}
 
 
+.cards{
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5rem;
+  margin: 2rem auto;
+  width: 100%;
+
+}
+.project-card{
+  color: $primary-color;
+  
+  .project-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:0 0 0.4rem 0.2rem $secondary-color;
+  }
+
+  .project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: 100%;
+    height: 11rem;
+    // height: auto;
+    border-radius: 10px;
+    background-color: $tertiary-color;
+    border-radius: 5px;
+    color: $primary-color;
+    h2{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+    p{
+      font-size: 0.9em;
+      padding: 0.3rem;
+    }
+    .btn{
+      padding: 0.4rem;
+      width: fit-content;
+      margin: 0.3rem auto;
+      text-align: center;
+      background-color: $secondary-color;
+      border-radius: 5px;
+      color: $primary-color;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      &:hover{
+        transition: all 0.5s ease;
+        background-color: $hover-color;
+        transform: scale(1.2);
+        color: $secondary-color;
+        border-radius: 50px;
+      }
+    }
+    }
+  }
+
+  // neon projects
+  .carousel{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .carousel-img{
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+   
+  }
+  .carousel_track-container{
+    background: lightgreen;
+   height: 100%;
+    position: relative;
+  }
+   .carousel_track{
+     padding:0;
+      margin: 0;
+      list-style: none;
+   }
+.carousel_slide{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel-button{
+  position:absolue;
+}
