@@ -303,7 +303,7 @@ height: fit-content;
   .carousel{
     position: relative;
     height: 600px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -329,6 +329,39 @@ height: fit-content;
   bottom: 0;
   width: 100%;
 }
-.carousel-button{
-  position:absolue;
+.carousel_button{
+  position:absolute;
+  top: 50%;
+  background:white;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  i{
+    color: #111;
+  }
+}
+
+.carousel_button--right{
+  right: -30px;
+}
+.carousel_button--left{
+  left: -30px;
+}
+
+.carousel_nav{
+  display: flex;
+  justify-content: center;
+  padding:10px 0;
+}
+.carousel_indicator{
+  border:0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgb(228, 227, 227);
+  margin: 0 12px;
+}
+.active-indicator{
+  background:$hover-color;
 }
