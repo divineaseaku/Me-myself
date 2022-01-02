@@ -110,7 +110,7 @@ a,li , i{
  box-shadow: 0 0 0.5rem 0.4rem $secondary-color;
 }
 .showcase-caption {
-
+  margin: 0.8em;
   width: 70% auto;
   display: block;
 p{
@@ -152,31 +152,35 @@ h3{
 /*contact me page*/
 .contact-me{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap:1em;
   background-color:$secondary-color;
   border-radius: 10px;
   padding: 0.8rem;
-  width: 80% auto;
+  width: 70%;
+  height: 80%;
   color:$primary-color;
   margin: 0 auto;
   .contact-cards{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     color: $primary-color;
     
       .cards{
         color: $secondary-color;
         background-color: $tertiary-color;
-        height:  auto;
         align-self: center;
-       h4, i{
-         display: inline-block;
-         width: auto;
-         padding: 10px;
-         align-items: center;
-         text-align: center;
-       }
+        justify-content: center;
+        width: 50%;
+        .contact-icon{
+          padding: 0.5rem;
+          font-size: 2em;
+          width: 20px;
+          justify-content: center;
+          align-items: center;
+        }
        .email{
          @include hover(#4b4848);
        }
@@ -185,31 +189,49 @@ h3{
 }
 /*about me page*/
 .about-me{
-background-color:$secondary-color;
   border-radius: 10px;
   padding: 0.8rem;
-  width: 80% ;
+  width: 70% ;
+  height: 100%;
   color:$primary-color;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1.8rem;
   
 .about-grid{
 display: grid;
-grid-template-columns:  2fr 1fr;
+border-radius: 10px;
+grid-template-columns: 1fr;
 grid-gap: 1rem;
 font-size: large;
+background-color:$secondary-color;
   }
   .about-text{
     padding: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    font: larger;
+    h4{
+      text-decoration: underline;
+    }
   }
-  .about-text1{
-    font-size: larger;
-  }
-  .about-text2{
-    margin-top: 40px;
-    h4 , p{
-      margin: 3px;
+  
+  .expertise{
+    position: relative;
+    align-self: center;
+    background-color: $tertiary-color;
+    padding: 1.4rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    p{
+      font-size: 1.5em;
+      font-weight: bold;
+      color: $primary-color;
+    }
+    .technologies{
+      margin: 1rem;
     }
     
   }
