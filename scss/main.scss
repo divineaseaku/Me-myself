@@ -157,29 +157,48 @@ h3{
   background-color:$secondary-color;
   border-radius: 10px;
   padding: 0.8rem;
-  width: 70%;
+  width: 50%;
   height: 80%;
   color:$primary-color;
   margin: 0 auto;
+  .contact-me-text{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $primary-color;
+    padding: 0.5rem;
+    margin: 0.3rem auto;
+  }
   .contact-cards{
     display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     color: $primary-color;
+ height: auto;
     
       .cards{
         color: $secondary-color;
+        display: inline-block;
         background-color: $tertiary-color;
         align-self: center;
         justify-content: center;
-        width: 50%;
+        width: 90%;
+       margin: 1em auto;
+       align-self: center;
+        border-radius:10px;
         .contact-icon{
           padding: 0.5rem;
-          font-size: 2em;
-          width: 20px;
+          font-size: 1.5em;
+          width: 10%;
           justify-content: center;
           align-items: center;
+        }
+        h4{
+          font-size: 1em;
+          font-weight: bold;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          width: 100%;
         }
        .email{
          @include hover(#4b4848);
@@ -338,12 +357,12 @@ height: fit-content;
   .carousel-img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    // object-fit: cover;
     border-radius: 10px;
   }
   .carousel_track-container{
     overflow-x: hidden;
-    background: lightgreen;
+    // background: lightgreen;
    height: 100%;
     position: relative;
     border-radius: 10px;
@@ -353,7 +372,7 @@ height: fit-content;
       margin: 0;
       position: relative;
       height: 100%;
-      transition: transform 0.5s ease;
+      transition: transform 0.8s ease;
    }
 .carousel_slide{
   position:absolute;
