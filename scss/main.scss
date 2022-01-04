@@ -357,7 +357,7 @@ height: fit-content;
   .carousel-img{
     width: 100%;
     height: 100%;
-    // object-fit: cover;
+    //  object-fit: cover;
     border-radius: 10px;
   }
   .carousel_track-container{
@@ -421,11 +421,55 @@ height: fit-content;
 .disabled{
   display: none;
 }
-.project-title{
+.neon-title{
   font-size: 1.5em;
   font-weight: bold;
   padding: 0.5rem;
   margin: 0 auto;
   width: 100%;
   text-align: center;
+}
+// end of neon projects
+.neon-info{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
+  .neon-info-left{
+    padding: 0.5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    color: $primary-color;
+    p{
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 0.5rem;
+      a{
+        font-size: medium;
+        text-decoration: underline
+      }
+    }
+  }
+  .neon-info-right{
+    padding: 0.5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    background-color: $tertiary-color;
+    color: $primary-color;
+    border-radius: 10px;
+    height: auto;
+    h2{
+      font-size: 1.4em;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+
+   li{
+     padding: 0.2rem;
+     color: $secondary-color;
+   }
+    }
 }
