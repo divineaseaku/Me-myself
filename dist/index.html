@@ -32,8 +32,25 @@
             </li>
           </ul>
         </div>
+        <span class="slide-btn">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
       </div>
     </header>
+    <div class="side-menu" id="side-menu">
+      <a href="#" class="close-btn" onclick="closeSlideMenu()"> &times;</a>
+      <a class="ul-btn" href="newclient.html">New Client</a>
+      <a class="ul-btn" href="lookup.html">Client Lookup</a>
+      <a class="ul-btn" href="contact.html">Contact Us</a>
+
+      <a class="profile" href="#">Staff Login</a>
+    </div>
 
     <main class="showcase">
       <img src="../dist/images/profile.jpeg" alt="Profile" />
@@ -64,4 +81,5 @@
       </div>
     </main>
   </body>
+  <script src="main.js"></script>
 </html>
