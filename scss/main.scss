@@ -30,15 +30,15 @@ a,li , i{
 }
 
 .container {
+  overflow-y: scroll;
    background-size: cover;
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
   background: $primary-color;
   color: $secondary-color;
   font-family: 'Fira Sans', sans-serif;
   width: 95%;
-  overflow: hidden;
+
 }
 
 .inner-header {
@@ -99,7 +99,7 @@ a,li , i{
 }
 
 .showcase {
-  margin-top: 12rem;
+  margin-top: 10rem;
   width: 100%;
   text-align: center;
 }
@@ -215,7 +215,7 @@ h3{
   color:$primary-color;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-gap: 1.8rem;
   
 .about-grid{
@@ -258,15 +258,17 @@ background-color:$secondary-color;
   }
 /*projects page*/
 .project-showcase {
-  margin-top: 4rem;
-  width: 80%;
+  position: relative;
+  top: 2rem;
+  width: 90%;
+  height: fit-content;
   text-align: center;
   margin: 0 auto;
 }
 .projects{
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 height: fit-content;
 }
 
@@ -293,7 +295,7 @@ height: fit-content;
   }
   img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     box-shadow:0 0 0.4rem 0.2rem $secondary-color;
   }
@@ -430,10 +432,11 @@ height: fit-content;
   text-align: center;
 }
 // end of neon projects
-.neon-info{
+.neon-info{  
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 1rem;
+  margin-bottom: 3.5rem;
   .neon-info-left{
     padding: 0.5rem;
     margin: 0 auto;
