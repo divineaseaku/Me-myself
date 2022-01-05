@@ -32,8 +32,23 @@
             </li>
           </ul>
         </div>
+        <span class="slide-btn">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
       </div>
     </header>
+    <div class="side-menu" id="side-menu">
+      <a href="#" class="close-btn" onclick="closeSlideMenu()"> &times;</a>
+      <a class="ul-btn" href="about.html">About</a>
+      <a class="ul-btn" href="projects.html">Projects</a>
+      <a class="ul-btn" href="contact.html">Contact Me</a>
+    </div>
 
     <main class="showcase">
       <div class="inner-showcase">
@@ -43,7 +58,6 @@
         </div>
       <div class="contact-me">
         <div class="contact-me-text">
-          <h2>Get in Touch</h2>
           <p>
             Please contact me through any of the below if you have questions. I am
             currently open to new projects and opportunities.
@@ -55,12 +69,12 @@
             <a href="mailto:divineaseaku@gmail.com" class="contact-icon" target="_blank">
               <i class="fa fa-envelope fa-1x email"> </i>
             </a>
-            <h4>divineaseaku@gmail.com</h4>
+            <h4 id="contact-text">divineaseaku@gmail.com</h4>
           </li>
 
           <li class="cards">
             <i class="fa fa-phone fa-1x contact-icon"></i>
-            <h4>240-334-8288</h4>
+            <h4 id="contact-text">240-334-8288</h4>
           </li>
         </ul>
       </div>

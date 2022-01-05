@@ -74,12 +74,11 @@ a,li , i{
       background-color:$tertiary-color;
       font-size: 1.2em;
       border: none;
-      border-radius: 5px;
-    
-      
-      
+      border-radius: 5px;  
     .nav-btn {
       display: inline-block;
+      justify-self: center;
+      
       margin: 0.5em;
       font-size: 20px;
       padding: 0.5rem;
@@ -147,6 +146,7 @@ h3{
   .page-title{
     font-size: 3.5em;
     font-weight: bold;
+    margin: 0.5em;
     
   }
 /*contact me page*/
@@ -166,15 +166,15 @@ h3{
     font-weight: bold;
     color: $primary-color;
     padding: 0.5rem;
-    margin: 0.3rem auto;
+    margin: 0.1rem auto;
   }
   .contact-cards{
     display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    color: $primary-color;
- height: auto;
+         color: $primary-color;
+         height: auto;
     
       .cards{
         color: $secondary-color;
@@ -193,11 +193,11 @@ h3{
           justify-content: center;
           align-items: center;
         }
-        h4{
-          font-size: 1em;
+        .contact-text{
+          font-size: 1.8em;
           font-weight: bold;
           padding: 0.5rem;
-          margin: 0.5rem;
+          margin: 0.8rem;
           width: 100%;
         }
        .email{
@@ -222,14 +222,14 @@ h3{
 display: grid;
 border-radius: 10px;
 grid-template-columns: 1fr;
-grid-gap: 1rem;
+grid-gap: 0.1rem;
 font-size: large;
 background-color:$secondary-color;
   }
   .about-text{
     padding: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font: larger;
+    font-size: 1.2em;
+    padding: 1em;
     h4{
       text-decoration: underline;
     }
@@ -239,10 +239,10 @@ background-color:$secondary-color;
     position: relative;
     align-self: center;
     background-color: $tertiary-color;
-    padding: 1.4rem;
+    padding: 1.1rem;
     border-radius: 10px;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 100%;
     p{
       font-size: 1.5em;
@@ -352,7 +352,7 @@ height: fit-content;
   .carousel{
     position: relative;
     height: 600px;
-    width: 85%;
+    width: 90%;
     margin: 2.5em auto;
   }
 
@@ -431,7 +431,7 @@ height: fit-content;
   width: 100%;
   text-align: center;
 }
-// end of neon projects
+//neon info
 .neon-info{  
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -446,12 +446,13 @@ height: fit-content;
     border-radius: 10px;
     color: $primary-color;
     p{
-      font-size: 0.8em;
+      font-size: 1em;
       font-weight: bold;
       padding: 0.5rem;
       a{
-        font-size: medium;
-        text-decoration: underline
+        font-size: larger;
+        text-decoration: underline;
+        color: $primary-color;
       }
     }
   }
@@ -481,7 +482,9 @@ height: fit-content;
 .slide-btn{
   display:none; 
   align-self: center;
-  margin: 1rem auto;
+  margin: 2rem ;
+  
+
 }
 .side-menu {
   position: fixed;
@@ -522,3 +525,35 @@ height: fit-content;
   margin-left: 10px;
 }
 
+//media queries
+
+//for under 870px
+@media screen and (max-width: 870px){
+  .nav-btns{
+    display: none;
+  }
+  .slide-btn{
+    display: block;
+  }
+  .cards{
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .about-me{
+   grid-template-columns: 1fr;
+  }
+  .carousel{
+    width: 100%;
+    object-fit: cover;
+  }
+.neon-info{
+  grid-template-columns: 1fr;
+}
+}
+
+//media queries for under 600px
+@media screen and (max-width: 620px){
+  .contact-me{
+    width: 60%;
+  }
+}

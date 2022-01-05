@@ -32,8 +32,23 @@
             </li>
           </ul>
         </div>
+        <span class="slide-btn">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
       </div>
     </header>
+    <div class="side-menu" id="side-menu">
+      <a href="#" class="close-btn" onclick="closeSlideMenu()"> &times;</a>
+      <a class="ul-btn" href="about.html">About</a>
+      <a class="ul-btn" href="projects.html">Projects</a>
+      <a class="ul-btn" href="contact.html">Contact Me</a>
+    </div>
 
     <main class="showcase">
       <h1 class="page-title">About Me</h1>
@@ -42,33 +57,34 @@
           <div class="about-text">
             <p>
               I am a self-taught web developer with interest for creating
-              awesome looking web-based applications. As a CS student, I
-               have been carefully currating my knowledge a software development, with exposure to several languages and algorithms. 
-               I also have a background in business
-              management and a love for learning new things.
+              awesome looking web-based applications. As a CS student, I have
+              been carefully currating my knowledge a software development, with
+              exposure to several languages and algorithms. I also have a
+              background in business management and a love for learning new
+              things.
             </p>
           </div>
           <div class="about-text">
             <h4>More About me</h4>
             <p>
-              Currently employed as a planogram analyst, and have also been
-              working  personal projects. I am open to
-              oppotunities, please get in touch if you are interested in working
-              with me, or if you have any questions.
+              Currently employed as a planogram analyst, while improving my
+              software development skill through my personal and group projects.
+              I am open to oppotunities, please get in touch if you are
+              interested in working with me, or if you have any questions.
             </p>
           </div>
         </div>
         <div class="expertise">
-          <p>My top expertise include: 
-             </p>
-                <ul class="technologies">
-                  <li>HTML/CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>R</li>
-                </ul>
+          <p>My top expertise include:</p>
+          <ul class="technologies">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>R</li>
+          </ul>
         </div>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

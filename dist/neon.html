@@ -32,8 +32,23 @@
             </li>
           </ul>
         </div>
+        <span class="slide-btn">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
       </div>
     </header>
+    <div class="side-menu" id="side-menu">
+      <a href="#" class="close-btn" onclick="closeSlideMenu()"> &times;</a>
+      <a class="ul-btn" href="about.html">About</a>
+      <a class="ul-btn" href="projects.html">Projects</a>
+      <a class="ul-btn" href="contact.html">Contact Me</a>
+    </div>
     <main class="project-showcase">
       <div class="carousel">
         <button class="carousel_button carousel_button--left disabled"> 
@@ -68,7 +83,7 @@
           <p>
             This is a data visualization app which plots and displays diferent aspects NEON's (National Ecological Observatory Network) stream discharge data. 
             The control panel mainly panel allows users configure between NEON sites and date ranges for stream discharge data to be rendered, while the right panel displays grahical analysis of the data based on the selected date.
-            This apps is available to be installed as a package from <a href="https://github.com/divineaseaku/NEON-stream-discharge/tree/master/shinyApps">Github</a>
+            The app is available to be installed as an R package from <a href="https://github.com/divineaseaku/NEON-stream-discharge/tree/master/shinyApp">Github</a>
           </p>
           </p>
         </div>
@@ -82,6 +97,7 @@
         
         
     </main>
+    <script src="main.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

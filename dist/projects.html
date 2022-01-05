@@ -33,8 +33,23 @@
             </li>
           </ul>
         </div>
+        <span class="slide-btn">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
       </div>
     </header>
+    <div class="side-menu" id="side-menu">
+      <a href="#" class="close-btn" onclick="closeSlideMenu()"> &times;</a>
+      <a class="ul-btn" href="about.html">About</a>
+      <a class="ul-btn" href="projects.html">Projects</a>
+      <a class="ul-btn" href="contact.html">Contact Me</a>
+    </div>
     <main class="project-showcase">
       <div class="projects">
         <h1 class="page-title">Past Projects</h1>
@@ -77,5 +92,6 @@
         
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
