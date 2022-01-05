@@ -554,6 +554,15 @@ height: fit-content;
 //media queries for under 600px
 @media screen and (max-width: 620px){
   .contact-me{
-    width: 60%;
+    width: 90%;
   }
+  /*projects page*/
+.project-showcase {
+  width: 95%;
 }
+.cards{
+  width: 100%;
+}
+    }
+
+
